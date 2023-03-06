@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+ 
+  }
+  
+  /* Cambiar el color del thumb (la barra que se desplaza) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 16px;
+  }
+
+  /* Cambiar el color del thumb cuando se hace clic en él */
+::-webkit-scrollbar:active {
+    background-color: #333;
+  }
+  
