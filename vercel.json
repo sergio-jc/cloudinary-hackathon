@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/twitter", "dest": "/index.html" },
+    { "src": "/linkedIn", "dest": "/index.html" },
+    { "src": "/github", "dest": "/index.html" },
+    { "src": "/all-pages", "dest": "/index.html" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
+}
