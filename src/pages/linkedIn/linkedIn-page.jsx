@@ -1,11 +1,21 @@
+import { mergeStrings } from '@/utils/merge-strings'
 import { Button } from '@components/button'
 import { Icons } from '@components/icons'
 import { USER_DATA } from '@constants/user-data.constants'
 import { userData } from '@context/user-data'
-import { useContext } from 'react'
+import { useContext, useMemo } from 'react'
 
 export function LinkedInPage() {
   const { user } = useContext(userData)
+  const userHeaderData = user[USER_DATA.NAME] || 'Your name'
+  const userNameHeader = useMemo(() => {
+    return user[USER_DATA.NICK_NAME]
+      ? mergeStrings({
+          mainStr: userHeaderData,
+          secondaryStr: user[USER_DATA.NICK_NAME]
+        })
+      : userHeaderData
+  }, [user])
   return (
     <div className='w-96 min-w-md flex flex-col items-center rounded-xl gap-4'>
       <div className='bg-stone-800 w-96 max-w-md h-80 flex flex-col items-center rounded-xl overflow-hidden'>
@@ -23,15 +33,13 @@ export function LinkedInPage() {
           </picture>
         </header>
         <article className='pt-10 w-full px-5'>
-          <h3 className='text-stone-300 font-bold text-xl'>
-            {user[USER_DATA.NAME] || 'Your name'}
-          </h3>
+          <h3 className='text-stone-300 font-bold text-xl'>{userNameHeader}</h3>
           <h4
-            className='text-stone-400 text-sm h-14 overflow-scroll overflow-x-hidden pr-1'
+            className='text-stone-400 text-sm h-16 overflow-scroll overflow-x-hidden pr-1'
             style={{ wordWrap: 'break-word' }}
           >
-            {user[USER_DATA.NICK_NAME] ||
-              'Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert y GitHub Star. ⭐'}
+            {user[USER_DATA.DESCRIPTION] ||
+              'Write a short description that reflects who you are and what you do, remember that your description is important. ⭐️'}
           </h4>
         </article>
         <footer className='w-full mt-2 flex flex-col justify-start px-5 gap-1'>
@@ -80,7 +88,101 @@ export function LinkedInPage() {
             style={{ wordWrap: 'break-word' }}
           >
             <p className='text-stone-400 text-sm'>
-              {user[USER_DATA.DESCRIPTION] || ''}
+              <div className='flex flex-col justify-between'>
+                <div>
+                  <div className='flex'>
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+                <div>
+                  <div className='flex'>
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-col justify-between'>
+                <div>
+                  <div className='flex'>
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+                <div>
+                  <div className='flex'>
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-col justify-between'>
+                <div>
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                  <div>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+                <div>
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+
+                  <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
+                    <div className='w-full h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                    <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+                  </div>
+                </div>
+              </div>
             </p>
           </div>
         </article>
