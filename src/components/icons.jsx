@@ -222,5 +222,146 @@ export const Icons = {
     >
       <path d='M14 2 0 6.67l5 2.64 5.67-3.98L6.7 11l2.63 5L14 2z' />
     </svg>
+  ),
+  TwitterVerify: () => (
+    <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'>
+      <path
+        d='M22.25 12c0-1.43-.879-2.672-2.191-3.34.46-1.39.203-2.898-.809-3.91s-2.52-1.27-3.91-.809C14.68 2.63 13.43 1.75 12 1.75s-2.672.879-3.328 2.191c-1.402-.46-2.91-.203-3.922.809s-1.262 2.52-.8 3.91c-1.31.668-2.2 1.91-2.2 3.34s.89 2.672 2.2 3.34c-.462 1.39-.212 2.898.8 3.91s2.52 1.262 3.91.809c.668 1.312 1.91 2.191 3.34 2.191s2.68-.879 3.34-2.191c1.39.453 2.898.203 3.91-.809s1.27-2.52.809-3.91c1.312-.668 2.191-1.91 2.191-3.34Zm-11.71 4.2L6.8 12.46l1.41-1.42 2.259 2.26 4.8-5.23 1.47 1.36Zm0 0'
+        style={{
+          stroke: 'none',
+          fillRule: 'nonzero',
+          fill: '#1d9bf0',
+          fillOpacity: 1
+        }}
+      />
+    </svg>
+  ),
+  TwitterEllipsis: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z'
+      />
+    </svg>
+  ),
+  TwitterBell: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
+      />
+    </svg>
+  ),
+  TwitterMessage: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75'
+      />
+    </svg>
+  ),
+  TwitterComments: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z'
+      />
+    </svg>
+  ),
+  TwitterRetweet: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3'
+      />
+    </svg>
+  ),
+  TwitterLike: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z'
+      />
+    </svg>
+  ),
+  TwitterUpLoad: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5'
+      />
+    </svg>
+  ),
+  TwitterChart: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='1.5'
+      class='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25z'
+      />
+    </svg>
   )
 }
