@@ -18,7 +18,7 @@ export function GithubPage() {
               {user[USER_DATA.NAME] || 'Your name'}
             </h3>
             <h4 className='text-stone-400 text-lg'>
-              {user[USER_DATA.NICK_NAME] || 'nick_name'}
+              {user[USER_DATA.NICK_NAME] || 'nickname'}
             </h4>
           </div>
         </header>
@@ -66,7 +66,7 @@ export function GithubPage() {
         <article className='w-full p-5 flex flex-col gap-4'>
           <h2 className='text-stone-300 font-medium text-base'>
             <code>
-              {user[USER_DATA.NICK_NAME] || 'Your name'}/<strong>README</strong>
+              {user[USER_DATA.NICK_NAME] || 'nickname'}/<strong>README</strong>
               .md
             </code>
           </h2>

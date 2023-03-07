@@ -42,7 +42,7 @@ export function TwitterPage() {
               </picture>
             </div>
             <h4 className='text-stone-500 text-base'>
-              @{user[USER_DATA.NICK_NAME] || 'nick_name'}
+              @{user[USER_DATA.NICK_NAME] || 'nickname'}
             </h4>
           </div>
           <p
