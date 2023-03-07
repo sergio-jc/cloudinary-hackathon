@@ -14,6 +14,11 @@ export function SocialNetworkData() {
     clearFilterImage
   } = useContext(userData)
 
+  const clearFormData = () => {
+    clearFilterImage()
+    clearUserData()
+  }
+
   return (
     <section className='bg-stone-800 flex flex-col items-center rounded-xl p-2 justify-between'>
       <header className='relative'>
@@ -35,7 +40,7 @@ export function SocialNetworkData() {
           icon={<Icons.Brush />}
           title='Clear'
           color='#1C1917'
-          onClick={clearFilterImage}
+          onClick={clearFormData}
         />
         <a
           href={user[USER_DATA.FILTER_IMAGE] || user[USER_DATA.IMAGE]}
