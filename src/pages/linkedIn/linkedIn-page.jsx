@@ -34,38 +34,40 @@ export function LinkedInPage() {
               'Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert y GitHub Star. ⭐'}
           </h4>
         </article>
-        <footer className='mt-3 w-full flex flex-col justify-start px-5 gap-2'>
-          <div>
-            <div className='flex'>
+        <footer className='w-full mt-2 flex flex-col justify-start px-5 gap-1'>
+          {/* <div className='flex'>
               <div className='w-12 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
               <div className='w-28 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+            </div> */}
+          <div className='flex flex-col justify-start text-sm text-stone-600 w-full'>
+            <div className='flex gap-4'>
+              <p>
+                <strong>+500</strong> Connections
+              </p>
+              <p>
+                <strong>115.541</strong> Followers
+              </p>
             </div>
-
             <div className='flex items-center gap-2 text-stone-500 text-sm font-semibold'>
               <div className='flex -space-x-3'>
                 <div className='w-10 h-10  bg-stone-700 rounded-full border-4 border-stone-800' />
                 <div className='w-10 h-10  bg-stone-700 rounded-full border-4 border-stone-800' />
               </div>
-              <div className='w-48 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
+              <div className='w-36 h-4  bg-stone-700 rounded-full border-4 border-stone-800' />
             </div>
           </div>
           <div className='w-full flex justify-start gap-2'>
-            <div className='h-8 bg-stone-700 rounded-full px-1'>
-              <Button
-                icon={<Icons.LinkedInConnect />}
-                textColor='#292524'
-                title='Connect'
-              />
+            <div className='h-7 bg-[#0d6993] rounded-full pointer-events-none'>
+              <Button icon={<Icons.LinkedInConnect />} title='Connect' />
             </div>
-            <div className='h-8 bg-stone-700 rounded-full px-1'>
+            <div className='h-7 bg-[#0d6993] rounded-full pointer-events-none'>
               <Button
                 icon={<Icons.LinkedInSendMessage />}
-                textColor='#292524'
                 title='Send message'
               />
             </div>
-            <div className='border-2 h-8 w-8 border-stone-700 rounded-full'>
-              <Button textColor='#57534E' title='...' />
+            <div className='border-[1px] border-stone-400 h-7 w-7 rounded-full pointer-events-none'>
+              <Button icon={<Icons.TwitterEllipsis />} textColor='#A8A29E' />
             </div>
           </div>
         </footer>
