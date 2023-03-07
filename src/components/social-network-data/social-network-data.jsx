@@ -25,9 +25,9 @@ export function SocialNetworkData() {
       </header>
       <form className='flex flex-col w-full px-3 pt-3 gap-4'>
         <Input label='Name' property='name' />
-        <Input label='Description or Nickname' property='nickName' />
+        <Input label='Nickname' property='nickName' />
         <div className='h-56'>
-          <Textarea label='About me' property='description' />
+          <Textarea label='Description' property='description' />
         </div>
       </form>
       <div className='flex gap-3'>
