@@ -17,7 +17,7 @@ export function GithubPage() {
             <h3 className='text-stone-300 text-xl font-semibold'>
               {user[USER_DATA.NAME] || 'Your name'}
             </h3>
-            <h4 className='text-stone-400 text-lg'>sergio-jc</h4>
+            <h4 className='text-stone-400 text-lg'>{user[USER_DATA.NICK_NAME] || 'nick_name'}</h4>
           </div>
         </header>
         <p
