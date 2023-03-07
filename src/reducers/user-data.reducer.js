@@ -59,7 +59,12 @@ const UPDATE_STATE_BY_ACTION = {
     return { ...state, [property]: value }
   },
   [USER_ACTION_TYPES.CLEAR_USER_DATA]: (state, action) => {
-    return userInitialState
+    return {
+      ...state,
+      name: '',
+      nickName: '',
+      description: ''
+    }
   }
 }
 
