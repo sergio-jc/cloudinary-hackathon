@@ -49,7 +49,7 @@ export function TwitterPage() {
             className='text-stone-300 text-sm overflow-scroll overflow-x-hidden h-20 pr-1'
             style={{ wordWrap: 'break-word' }}
           >
-            {user[USER_DATA.DESCRIPTION] || ''}
+            {user[USER_DATA.DESCRIPTION] || 'Write a short description that reflects who you are and what you do, remember that your description is important. ⭐️'}
           </p>
         </article>
         <footer className='flex gap-3 text-sm text-stone-600 w-full px-5 mt-3'>

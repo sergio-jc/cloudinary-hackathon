@@ -17,14 +17,17 @@ export function GithubPage() {
             <h3 className='text-stone-300 text-xl font-semibold'>
               {user[USER_DATA.NAME] || 'Your name'}
             </h3>
-            <h4 className='text-stone-400 text-lg'>{user[USER_DATA.NICK_NAME] || 'nick_name'}</h4>
+            <h4 className='text-stone-400 text-lg'>
+              {user[USER_DATA.NICK_NAME] || 'nick_name'}
+            </h4>
           </div>
         </header>
         <p
           className='text-stone-300 text-sm overflow-scroll h-20 overflow-x-hidden pr-1'
           style={{ wordWrap: 'break-word' }}
         >
-          {user[USER_DATA.DESCRIPTION]}
+          {user[USER_DATA.DESCRIPTION] ||
+            'Write a short description that reflects who you are and what you do, remember that your description is important. ⭐️'}
         </p>
         <footer className='text-stone-400 flex flex-col gap-3'>
           <div className='flex items-center gap-1 text-sm text-stone-600 w-full'>
