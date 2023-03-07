@@ -172,5 +172,55 @@ export const Icons = {
         d='M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42'
       />
     </svg>
+  ),
+  LinkedInPremiun: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      class='mercado-match'
+      data-supported-dps='24x24'
+    >
+      <path
+        fill='currentColor'
+        d='M20.5 0h-17A1.5 1.5 0 0 0 2 1.5V24l4.5-4h14a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 0zM8 17H5V8h3zM6.5 6.25A1.78 1.78 0 0 1 4.7 4.5a1.8 1.8 0 0 1 3.6 0 1.78 1.78 0 0 1-1.8 1.75zM19 17h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 12.19a.66.66 0 0 0 0 .14V17h-3V8h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z'
+      />
+    </svg>
+  ),
+  LikedInBell: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      class='mercado-match'
+      data-supported-dps='24x24'
+    >
+      <path d='M22 18a4.52 4.52 0 0 0-1.17-2.83L19 13l-.8-5.56A6.27 6.27 0 0 0 12 2a6.27 6.27 0 0 0-6.21 5.44L5 13l-1.83 2.17A4.52 4.52 0 0 0 2 18v1h8.28a2 2 0 1 0 3.44 0H22zM12 4a4.29 4.29 0 0 1 4.23 3.72L17 13H7l.77-5.3A4.26 4.26 0 0 1 12 4zM4.32 17c.12-.19.24-.37.38-.55L6.77 14h10.46l2 2.42a4.67 4.67 0 0 1 .41.58z' />
+    </svg>
+  ),
+  LinkedInConnect: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='16'
+      height='16'
+      fill='currentColor'
+      class='mercado-match'
+      data-supported-dps='16x16'
+    >
+      <path d='M9 4a3 3 0 1 1-3-3 3 3 0 0 1 3 3zM6.75 8h-1.5A2.25 2.25 0 0 0 3 10.25V15h6v-4.75A2.25 2.25 0 0 0 6.75 8zM13 8V6h-1v2h-2v1h2v2h1V9h2V8z' />
+    </svg>
+  ),
+  LinkedInSendMessage: () => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='16'
+      height='16'
+      fill='currentColor'
+      class='mercado-match'
+      data-supported-dps='16x16'
+    >
+      <path d='M14 2 0 6.67l5 2.64 5.67-3.98L6.7 11l2.63 5L14 2z' />
+    </svg>
   )
 }
